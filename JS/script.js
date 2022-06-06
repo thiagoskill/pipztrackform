@@ -40,3 +40,6 @@ let soma = document.getElementById("numerodaSoma");
            })
         alert("Evento Simples enviado")
     }
+
+   /*  criar lista com todos os eventos disparados, assim que reaprender a usar table e criar table
+   no JS*/
