@@ -8,7 +8,7 @@
         
         <script>
             window.pipzSettings = { enable_form_tracking: true}
-            </script>
+            </script> 
         <title>EVENTS PIPZ</title>
     </head>
     
@@ -27,7 +27,7 @@
     
     <div>
             <label>Digite seu e-mail para se identificar</label>
-            <input type="text" name="email" id="emailPipzId">
+            <input type="text" name="emailIdentificar" id="emailPipzId">
             <button onclick="identificar()">Clique para saber que voce é voce</button>
     </div>
     
@@ -46,6 +46,11 @@
             <input type="submit">
     
         </form> 
+    </div>
+    <div>
+        <input type="number" id="numerodaSoma" placeholder="digite um numero, vai...">
+
+        <button onclick="eventSimples()">Disparo de Evento Simples</button>
     </div>
     <div>
         <script src="JS/script.js" ></script>
