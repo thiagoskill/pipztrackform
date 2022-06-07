@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-image: url(/);
+}
+header {
+    text-align: center;
+    color:crimson
+}
+
+.bemvindo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.identify label {
+    width: 100%;
+    display: inline-block;
+    margin  : 10px;
+    font-weight: bold;
+}
+.identify button {
+    display: block; 
+    margin-left: 50%;
+    margin-top: 10px;
+}
+.identify input {
+    margin-left: 50px;
+}
+.image{
+    margin: 20px;
+
+}
+
+input[type=submit] {
+    display: block; 
+    margin-left: 50%;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
