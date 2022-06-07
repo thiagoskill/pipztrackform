@@ -20,6 +20,7 @@
        <h2>Seja Bem-Vindo à Pagina de Teste do Pipz</h2>
     </div>
     <h3>Essa página tem o objetivo de te identificar e emitir eventos e outras funções do Pipz.</h3>
+    <p>Pode iniciar tambem automações</p>
     <div class="identify">
         <label id="labIdentify">Digite seu e-mail para se identificar</label>
         <input type="text" name="emailIdentificar" id="emailPipzId">
@@ -33,6 +34,8 @@
 
     
     <div class="FormTrack">
+        <h3>Esse Formulario cria um "Tracked Form" no Pipz</h3>
+        <p>Esse formulario adiciona contatos ao Pipz, mas se configurado, pode iniciar automações</p>
         <form id="FormPipztrackTeste" class="FormularioTeste">
     
             <label>Nome</label>
@@ -48,10 +51,12 @@
     
         </form> 
     </div>
-    <div>
+    <div class="eventSimples">
+        <h3>Este botão lança um evento simples com dados prontos, e o numero que pedimos</h3>
+        <p>Pode ser utilizado para eventos de automações</p>
         <input type="number" id="numerodaSoma" placeholder="digite um numero, vai...">
 
-        <button onclick="eventSimples()">Disparo de Evento Simples</button>
+        <button  onclick="eventSimples()">Disparo de Evento Simples</button>
     </div>
     <div>
         <script src="JS/script.js" ></script>

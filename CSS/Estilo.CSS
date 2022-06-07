@@ -19,9 +19,16 @@ header {
     font-weight: bold;
 }
 .identify button {
-    display: block; 
+    display: block;
     margin-left: 50%;
     margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .identify input {
     margin-left: 50px;
@@ -35,6 +42,19 @@ input[type=submit] {
     display: block; 
     margin-left: 50%;
     margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .eventSimples button{
+    display: block; 
+    margin-left: 45%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;

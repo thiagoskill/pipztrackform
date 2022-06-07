@@ -19,7 +19,8 @@ let soma = document.getElementById("numerodaSoma");
         {"email": email.value , 
         "Nome": nome.value , 
         "Idade":idade.value , 
-        "mensagem" : "Esse evento foi lançado como teste"});
+        "mensagem" : "Esse evento foi lançado como Tracked Form teste"});
+        alert("Tracked Form enviado!")
     }
 
     function identificar(){
