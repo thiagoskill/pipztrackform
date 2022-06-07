@@ -18,9 +18,8 @@ let soma = document.getElementById("numerodaSoma");
       pipz.track("teste", 
         {"email": email.value , 
         "Nome": nome.value , 
-        "Idade":idade.value , 
-        "mensagem" : "Esse evento foi lançado como Tracked Form teste"});
-        alert("Tracked Form enviado!")
+        "Idade":idade.value});
+
     }
 
     function identificar(){
@@ -37,7 +36,8 @@ let soma = document.getElementById("numerodaSoma");
             "autor" : "Thiago Alves No JS",
             "email" : "thiagoskill@gmail.com" , 
             "mensagem" : mensagens , 
-            "numeroSoma1" : soma.value 
+            "numeroSoma1" : soma.value ,
+            "origem" : "FrontEnd"
            })
         alert("Evento Simples enviado")
     }
