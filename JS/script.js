@@ -37,10 +37,11 @@ let soma = document.getElementById("numerodaSoma");
             "email" : "thiagoskill@gmail.com" , 
             "mensagem" : mensagens , 
             "numeroSoma1" : soma.value ,
-            "origem" : "FrontEnd"
+            "origem" : "FrontEnd" ,
+            "utm" : "https://www.teste.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=promo&utm_content=pipz1&utm_term=pipzterm"
            })
         alert("Evento Simples enviado")
     }
 
-   /*  criar lista com todos os eventos disparados, assim que reaprender a usar table e criar table
+   /*  criar lista com todos os eventos disparados, assim que reaprender a usar table e criar table     
    no JS*/
