@@ -62,3 +62,21 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  /* 
+Margin - Comprimento
+Width - Largura
+    padding é espaçamento interno, e pode ser:
+-Left
+-Right
+-Top
+-Botton
+    margin é espaçamento externo e pode ser:
+-Left
+-Right
+-Top
+-Botton 
+-----------------------
+display block - Ocupa todo o conteudo da linha que ele está na page
+display inline - Não deixa alterar o espaçamento interno ou externo
+display block-inline - Ele bloqueia uma largura, porem fixa. Podemos escolher todos os espaçamentos nesse caso*/
