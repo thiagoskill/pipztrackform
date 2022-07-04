@@ -12,13 +12,15 @@ let mensagens = ['Esta mensagem faz Parte de um Array, no slot 0' ,
                 ];
 let soma = document.getElementById("numerodaSoma");
 
+let emmId = document.getElementById("numeroId");
 
 
     function eventos_pipz(){
       pipz.track("teste", 
         {"email": email.value , 
-        "Nome": nome.value , 
+        "nome": nome.value , 
         "Idade":idade.value});
+        alert("Form Enviado!")
 
     }
 
@@ -41,6 +43,14 @@ let soma = document.getElementById("numerodaSoma");
             "utm" : "https://www.teste.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=promo&utm_content=pipz1&utm_term=pipzterm"
            })
         alert("Evento Simples enviado")
+    }
+
+    function emm() {
+        pipz.track("EventoIdEmm",{ 
+            "id" : numeroId.value , 
+            "palavra" : "teste ok"
+           })
+        alert("Evento EMM Enviado")
     }
 
    /*  criar lista com todos os eventos disparados, assim que reaprender a usar table e criar table     
