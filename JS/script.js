@@ -45,12 +45,10 @@ let emmId = document.getElementById("numeroId");
         alert("Evento Simples enviado")
     }
 
-    function emm() {
-        pipz.track("EventoIdEmm",{ 
-            "id" : numeroId.value , 
-            "palavra" : "teste ok"
-           })
-        alert("Evento EMM Enviado")
+    function paginaVista() {
+        pipz.track("page_view",{
+        })
+        alert("Pagina carregada")
     }
 
    /*  criar lista com todos os eventos disparados, assim que reaprender a usar table e criar table     
