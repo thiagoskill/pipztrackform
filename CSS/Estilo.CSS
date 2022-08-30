@@ -63,6 +63,10 @@ input[type=submit] {
     cursor: pointer;
   }
 
+  thead{
+      font-style: italic;
+  }
+
   /* 
 Margin - Comprimento
 Width - Largura
