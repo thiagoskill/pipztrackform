@@ -67,6 +67,47 @@ input[type=submit] {
       font-style: italic;
   }
 
+  .FormTrack{
+      display: block;
+      text-align: center;
+  }
+  .identify{
+    display: block;
+    text-align: center;
+}
+
+.eventSimples{
+    display: block;
+    text-align: center;
+}
+
+
+table{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid blue;
+}
+
+table th {
+    border:1px solid red;
+}
+
+thead {
+    text-align: center;
+}
+
+.tableTitle{
+    font-size: larger;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
   /* 
 Margin - Comprimento
 Width - Largura
