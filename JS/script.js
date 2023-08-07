@@ -12,11 +12,15 @@ let mensagens = ['Esta mensagem faz Parte de um Array, no slot 0' ,
                 ];
 let soma = document.getElementById("numerodaSoma");
 
+<<<<<<< HEAD
     function PageView() {
         pipz.track("PageView");
         alert("Page is loaded");
     }   
+=======
+>>>>>>> 9537330fc7e1233e166fbc5469b78bbbc9d3e330
 
+//evento Formulário Trackeado
     function eventos_pipz(){
       pipz.track("formulario", 
         {"email": email.value , 
@@ -25,7 +29,7 @@ let soma = document.getElementById("numerodaSoma");
         alert("Form Enviado!")
 
     }
-
+//identify
     function identificar(){
         pipz.identify( emailIdentificar.value ,
             {"email" : emailIdentificar.value , 
@@ -33,7 +37,7 @@ let soma = document.getElementById("numerodaSoma");
         });
         alert(" Identificar enviado");
     }
-
+//evento personalizado
     function eventSimples() {
         pipz.track("eventoSimples",{ 
             "nome" : "Brewmaster" ,

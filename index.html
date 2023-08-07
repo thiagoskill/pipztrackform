@@ -11,6 +11,8 @@
 
     </script>
         <title>EVENTS PIPZ</title>
+       
+        
     </head>
     
     <body onload="PageView()">
@@ -53,16 +55,46 @@
     
         </form> 
     </div>
+<<<<<<< HEAD
 
+=======
+    <div>
+        <p class="tableTitle">Entrada de Contatos</p>
+        <!--                      A tabela tem as seguintes tags:
+                    <th></th>  -define as celulas de cabeçalho
+                    <tr></tr> - define a linha
+                    <td></td> - define a celula na tabela!
+                    <thead> Head do Table
+                    <tbody> Corpo do Table
+                    <tfoot> Footer do Table -->
+        <table>
+                    <thead>
+                        <th>Nomes</th>
+                        <th>Email</th>
+                        <th>Idade</th>
+                    </thead>
+                    <tbody id="tbody"> 
+                    </tbody>
+                    <tfoot>
+                       <tr>
+                           <th>Quantidade de contatos</th>
+                           <td>55</td>
+                       </tr>
+                    </tfoot>
+                </table>
+    </div>
+>>>>>>> 9537330fc7e1233e166fbc5469b78bbbc9d3e330
     <div class="eventSimples">
         <h3>Este botão lança um evento simples com dados prontos, e o numero que pedimos</h3>
         <p>Pode ser utilizado para eventos de automações</p>
         <input type="number" id="numerodaSoma" placeholder="digite um numero, vai...">
 
         <button  onclick="eventSimples()">Disparo de Evento Simples</button>
+        <button  onclick="mostrar()">teste</button>
     </div>
     <div>
         <script src="JS/script.js" ></script>
+        <script src="JS/table.js" ></script>
     </div>
 
     </body>
