@@ -3,35 +3,37 @@
     <head>
         <meta charset="utf8">
         <link rel="stylesheet" type="text/css" href="CSS/Estilo.CSS"/>
-        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.64431975/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('33f80c76648dff7329008')}}();</script>
-
-        
+        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.b95a1201/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('afe5fdff3005ff63290d2')}}();</script>
         <script>
             window.pipzSettings = { enable_form_tracking: true}
             </script> 
+    <script>
+
+    </script>
         <title>EVENTS PIPZ</title>
     </head>
     
-    <body>
+    <body onload="PageView()">
     <header>
         <h1>Teste de Events</h1>
     </header>
     <div class="bemvindo">
        <h2>Seja Bem-Vindo à Pagina de Teste do Pipz</h2>
+       <h3>Essa página tem o objetivo de te identificar e emitir eventos e outras funções do Pipz.</h3>
+       <p>Pode iniciar tambem automações</p>
     </div>
-    <h3>Essa página tem o objetivo de te identificar e emitir eventos e outras funções do Pipz.</h3>
-    <p>Pode iniciar tambem automações</p>
+
     <div class="identify">
         <label id="labIdentify">Digite seu e-mail para se identificar</label>
         <input type="text" name="emailIdentificar" id="emailPipzId">
         <button onclick="identificar()">Identify</button>
     </div>
-
+<!-- 
 
     <div class="image">
         <img src="https://image.shutterstock.com/image-photo/web-development-coding-programming-internet-260nw-1141706672.jpg"/>
     </div>
-
+ -->
     
     <div class="FormTrack">
         <h3>Esse Formulario cria um "Tracked Form" no Pipz</h3>
@@ -51,36 +53,7 @@
     
         </form> 
     </div>
-    <div>
-        <table>
-            <!--         A tabela tem as seguintes tags:
-                    <th></th>  -define as celulas de cabeçalho
-                    <tr></tr> - define a linha
-                    <td></td> - define a celula na tabela! -->
-                    <thead> <!-- Head do Table -->
-                        <th>Lista de entradas na Tabela</th> 
-                    </thead>
-                    <tbody> 
-                        <tr>
-                            <th>Nomes</th>
-                            <th>emails</th>
-                            <th>Idade</th>
-                        </tr>
-                        <tr>
-                            <td>Thiago da Silva Alves</td>
-                            <td>thiagoskill@gmail.com</td>
-                            <td>33</td>
-                        </tr>          
-                    </tbody>
-                    <tfoot>
-                       <tr>
-                           <Th>Quantidade de contatos</Th>
-                           <td>55</td>
-                       </tr>
-                    </tfoot>
-                </table>
 
-    </div>
     <div class="eventSimples">
         <h3>Este botão lança um evento simples com dados prontos, e o numero que pedimos</h3>
         <p>Pode ser utilizado para eventos de automações</p>
@@ -94,4 +67,4 @@
 
     </body>
     
-</html>
+</html> 

@@ -12,11 +12,13 @@ let mensagens = ['Esta mensagem faz Parte de um Array, no slot 0' ,
                 ];
 let soma = document.getElementById("numerodaSoma");
 
-let emmId = document.getElementById("numeroId");
-
+    function PageView() {
+        pipz.track("PageView");
+        alert("Page is loaded");
+    }   
 
     function eventos_pipz(){
-      pipz.track("teste", 
+      pipz.track("formulario", 
         {"email": email.value , 
         "nome": nome.value , 
         "Idade":idade.value});
@@ -33,14 +35,15 @@ let emmId = document.getElementById("numeroId");
     }
 
     function eventSimples() {
-        pipz.track("eventoSimpes",{ 
+        pipz.track("eventoSimples",{ 
             "nome" : "Brewmaster" ,
             "autor" : "Thiago Alves No JS",
             "email" : "thiagoskill@gmail.com" , 
             "mensagem" : mensagens , 
             "numeroSoma1" : soma.value ,
             "origem" : "FrontEnd" ,
-            "utm" : "https://www.teste.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=promo&utm_content=pipz1&utm_term=pipzterm"
+            "youtube": "youtube.com/sigmask",
+            "kick": "kick.com/thiagoskill"
            })
         alert("Evento Simples enviado")
     }
