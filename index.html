@@ -2,20 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf8">
+        
         <link rel="stylesheet" type="text/css" href="CSS/Estilo.CSS"/>
-        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.b95a1201/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('afe5fdff3005ff63290d2')}}();</script>
+        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.61289573/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('afe5fdff3005ff63290d2')}}();</script>        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.64431975/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('33f80c76648dff7329008')}}();</script>
         <script>
             window.pipzSettings = { enable_form_tracking: true}
-            </script> 
-    <script>
-
-    </script>
-        <title>EVENTS PIPZ</title>
-       
+            </script>
+ 
+        <title>EVENTOS PIPZ</title>
         
     </head>
     
-    <body onload="PageView()">
+    <body>
     <header>
         <h1>Teste de Events</h1>
     </header>
@@ -40,7 +38,7 @@
     <div class="FormTrack">
         <h3>Esse Formulario cria um "Tracked Form" no Pipz</h3>
         <p>Esse formulario adiciona contatos ao Pipz, mas se configurado, pode iniciar automações</p>
-        <form id="FormPipztrackTeste" class="FormularioTeste">
+        <form id="FormulariodeTeste" class="FormularioTeste">
     
             <label>Nome</label>
             <input type="text" name="Nome" id="nomePipz">
@@ -48,55 +46,41 @@
             <label>Email</label>
             <input type="text" name="Email" id="emailPipz">
     
-            <label>Idade</label>
-            <input type="text" name="idade" id="idadePipz">
-    
-            <input type="submit">
+            <label>Cidade</label>
+            <input type="text" name="cidade" id="cidadePipz">
+
+            <label>Aniversário</label>
+            <input type="date" name="birthdate" id="birthdate">
+
+            <input type="submit" value="Submit" onsubmit="FormEnviado()">
     
         </form> 
     </div>
-<<<<<<< HEAD
-
-=======
     <div>
-        <p class="tableTitle">Entrada de Contatos</p>
-        <!--                      A tabela tem as seguintes tags:
-                    <th></th>  -define as celulas de cabeçalho
-                    <tr></tr> - define a linha
-                    <td></td> - define a celula na tabela!
-                    <thead> Head do Table
-                    <tbody> Corpo do Table
-                    <tfoot> Footer do Table -->
-        <table>
-                    <thead>
-                        <th>Nomes</th>
-                        <th>Email</th>
-                        <th>Idade</th>
-                    </thead>
-                    <tbody id="tbody"> 
-                    </tbody>
-                    <tfoot>
-                       <tr>
-                           <th>Quantidade de contatos</th>
-                           <td>55</td>
-                       </tr>
-                    </tfoot>
-                </table>
+        <button type="button" id="adicionarLinhaBtn" onclick="adicionarLinha()">Salvar Entrada *Antes do Envio*</button>
     </div>
->>>>>>> 9537330fc7e1233e166fbc5469b78bbbc9d3e330
+    <div>
+        <table id="tabelaEnviada">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Cidade</th>
+                <th>Aniversário</th>
+            </tr>
+        </table>
+    </div>
     <div class="eventSimples">
-        <h3>Este botão lança um evento simples com dados prontos, e o numero que pedimos</h3>
+        <h3>Este botão lança um evento simples com dados prontos</h3>
         <p>Pode ser utilizado para eventos de automações</p>
-        <input type="number" id="numerodaSoma" placeholder="digite um numero, vai...">
-
-        <button  onclick="eventSimples()">Disparo de Evento Simples</button>
-        <button  onclick="mostrar()">teste</button>
+        <input type="number" id="numerodaSoma" placeholder="Numero para evenSSSto">
+         <p>Vamos somar um numero ao digitado, via automação</p>
+        <button  onclick="eventoSimples()">Disparo de Evento Simples</button>
+        
     </div>
+   
     <div>
         <script src="JS/script.js" ></script>
-        <script src="JS/table.js" ></script>
-    </div>
-
+    </div> 
     </body>
     
 </html> 
