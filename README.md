@@ -19,16 +19,6 @@ JavaScript
 Instalação e Uso
 Clone o Repositório:
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Navegue até o Diretório do Projeto:
-
-bash
-Copiar código
-cd seu-repositorio
-Abra o arquivo index.html em um navegador.
-
 Estrutura do Projeto
 index.html: Contém o código HTML para o formulário e a tabela.
 styles.css: Contém os estilos CSS para a tabela e o botão de remoção.
