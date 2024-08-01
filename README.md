@@ -16,8 +16,6 @@ Tecnologias Utilizadas
 HTML
 CSS
 JavaScript
-Instalação e Uso
-Clone o Repositório:
 
 Estrutura do Projeto
 index.html: Contém o código HTML para o formulário e a tabela.
