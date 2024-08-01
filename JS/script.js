@@ -40,16 +40,11 @@ let soma = document.getElementById("numerodaSoma");
         alert("Form enviado ao Pipz")
     }
 
-
-
-
     //TABELA ABAIXO:
    function adicionarLinha(){
     //obter a referencia da tabela
 
-    let tabela = document.getElementById("tabelaEnviada");
-    //criar nova linha (tr)
-
+    let tabela = document.getElementById("tabelaEnviada").getElementsByTagName('tbody')[0];
     // Iniciando uma mensagem de erro
     let mensagemErro = "Por favor, preencha os seguintes campos:\n";
     let camposFaltando = false;
@@ -76,23 +71,35 @@ let soma = document.getElementById("numerodaSoma");
         alert(mensagemErro);
     }else{
 
+    //criar nova linha (tr)
     let novaLinha = tabela.insertRow();
-    //criar células e adicionar o conteudo
 
+    //criar células e adicionar o conteudo
     let celula1 = novaLinha.insertCell(0);
     let celula2 = novaLinha.insertCell(1);
     let celula3 = novaLinha.insertCell(2);
     let celula4 = novaLinha.insertCell(3);
+    let celulaAcao = novaLinha.insertCell(4);
+
 
     celula1.innerHTML = nome.value;
     celula2.innerHTML = email.value;
     celula3.innerHTML = cidade.value;
     celula4.innerHTML = birthday.value;
+    celulaAcao.innerHTML = "<a class='remove-button'>🚮</a>";
+    
+    document.getElementById('FormulariodeTeste').reset();
 
-    // // Se eu quisesse limpar os campos de entrada após adicionar a linha
+    // Adiciona o evento de clique para o botão de remoção
+    celulaAcao.querySelector('.remove-button').addEventListener('click', function() {
+        tabela.deleteRow(novaLinha.rowIndex -1);
+        });
+
+
+    }
+    // Se eu quisesse limpar os campos de entrada após adicionar a linha
     // nome.value = "";
     // email.value = "";
     // cidade.value = "";
     // birthday.value = ""; //isso deixaria os campos vazios
-    }
 }

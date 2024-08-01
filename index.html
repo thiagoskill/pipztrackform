@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf8">
-        
+
         <link rel="stylesheet" type="text/css" href="CSS/Estilo.CSS"/>
         <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.61289573/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('afe5fdff3005ff63290d2')}}();</script>        <script>!function(){var a=window.pipz=window.pipz||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error('Snippet included twice.');else{a.invoked=!0;a.methods='formIdentify pageview reset identify track ready page once off on'.split(' ');a.factory=function(c){return function(){var b=Array.prototype.slice.call(arguments);b.unshift(c);a.push(b);return a}};for(var c=0;c<a.methods.length;c++){var d=a.methods[c];a[d]=a.factory(d)}a.load=function(c){var b=document.createElement('script');b.type='text/javascript';b.async=!0;var d=document.getElementsByTagName('script')[0];d.parentNode.insertBefore(b,d);b.onload=function(){a=window.pipz;a.initialize({'eCentrack.io':{apiKey:c}},{plan:{track:{}}});};b.src='//loader.pipz.io/v1/290.64431975/pipz.min.js'};a.SNIPPET_VERSION='4.0.0';a.load('33f80c76648dff7329008')}}();</script>
         <script>
@@ -12,7 +12,7 @@
         <title>EVENTOS PIPZ</title>
         
     </head>
-    
+
     <body>
     <header>
         <h1>Teste de Events</h1>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="identify">
-        <label id="labIdentify">Digite seu e-mail para se identificar</label>
+        <label id="labIdentify">Digite seu e-mail para se identificar, como se fosse um login, por exemplo</label>
         <input type="text" name="emailIdentificar" id="emailPipzId">
         <button onclick="identificar()">Identify</button>
     </div>
@@ -37,7 +37,7 @@
     
     <div class="FormTrack">
         <h3>Esse Formulario cria um "Tracked Form" no Pipz</h3>
-        <p>Esse formulario adiciona contatos ao Pipz, mas se configurado, pode iniciar automações</p>
+        <p>Esse formulario adiciona contatos ao Pipz. Se configurado, pode iniciar automações</p>
         <form id="FormulariodeTeste" class="FormularioTeste">
     
             <label>Nome</label>
@@ -52,7 +52,7 @@
             <label>Aniversário</label>
             <input type="date" name="birthdate" id="birthdate">
 
-            <input type="submit" value="Submit" onsubmit="FormEnviado()">
+            <input type="submit" value="Enviar Formulário" onsubmit="FormEnviado()">
     
         </form> 
     </div>
@@ -60,27 +60,32 @@
         <button type="button" id="adicionarLinhaBtn" onclick="adicionarLinha()">Salvar Entrada *Antes do Envio*</button>
     </div>
     <div>
-        <table id="tabelaEnviada">
+        <table id="tabelaEnviada" class="tabelaEnviada">
+
+        <thead>
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Cidade</th>
                 <th>Aniversário</th>
+                <th>Remover</th>
             </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas dinamicas entram aqui -->
+        </tbody>
         </table>
     </div>
     <div class="eventSimples">
         <h3>Este botão lança um evento simples com dados prontos</h3>
         <p>Pode ser utilizado para eventos de automações</p>
-        <input type="number" id="numerodaSoma" placeholder="Numero para evenSSSto">
-         <p>Vamos somar um numero ao digitado, via automação</p>
+        <input type="number" id="numerodaSoma" placeholder="Numero para evento">
+         <p>Vamos somar um numero ao digitado, via automação dentro do Pipz</p>
         <button  onclick="eventoSimples()">Disparo de Evento Simples</button>
         
     </div>
-   
     <div>
         <script src="JS/script.js" ></script>
     </div> 
     </body>
-    
-</html> 
+</html>
