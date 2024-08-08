@@ -12,6 +12,10 @@ Adicionar Linhas: Adiciona entradas à tabela a partir dos dados do formulário.
 Remover Linhas: Remove entradas da tabela com um botão de lixeira.
 Persistência de Dados: Os dados da tabela são armazenados no localStorage e carregados automaticamente ao recarregar a página.
 
+UPDATES
+UPDATE 08.08 - Adicionado botão que traz todos os itens da tabela pra um JSON. Recomendo tentar fazer envio pra endpoint no "BEECEPTOR",
+a fins de estudo, adicionar novo botão que faz o envio dos dados. Após entendimento, usar o mesmo botão que cria o JSON para envio dos dados
+
 Tecnologias Utilizadas
 HTML
 CSS
