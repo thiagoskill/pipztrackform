@@ -120,11 +120,12 @@ function adicionarLinha() {
                 // Exemplo de função PUSH
                 //let frutas = ["maçã", "banana"];
                 // frutas.push("laranja"); adicionando a laranja ao array de frutas
-                // console.log(frutas); retorna no log = ["maçã", "banana", "laranja"]
+                // console.log(frutas); retorna no log = ["maçã", "banana", "laranja"].
                 dadosArray.push(linhaArray);
             }
         let jsonTabela = JSON.stringify(dadosArray, null, 2);
         console.log(jsonTabela);
+        alert(jsonTabela);
         return jsonTabela;
     }
 
