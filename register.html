@@ -1,0 +1,45 @@
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="CSS/Login.CSS">
+    <title>Faça seu login</title>
+</head>
+<body>
+    <div class="content">
+        <div class="formLogin">
+           <form id="cadastroUsuario">
+            <label for="nomeCadastro">Nome</label>
+            <input type="text" name="nomeCadastro" id="nomeRegister" placeholder="Nome Obrigatório">
+            <label for="emailCadastro">Email</label>
+            <input type="text" name="emailCadastro" id="emailRegister" placeholder="Email Obrigatório">
+            <label for="dataNasc">Data de Nacimento</label>
+            <input type="date" name="dataNascimento" id="nascimentoRegister">
+            <label for="gameFavorito">Game Favorito</label>
+            <select name="gameTipo" id="gameGender">
+                <option value="none">Selecione</option>
+                <option value="fps">FPS</option>
+                <option value="moba">MOBA</option>
+                <option value="Souls Like">Souls Like</option>
+                <option value="Hack nd Slash">Hack and Slash</option>
+                <option value="Battle Royale">Battle Royale</option>
+                <option value="Fight">Luta</option>
+                <option value="outros">Não Listado</option>
+            </select>
+            <p>Tempo de jogo diário:</p>
+            <input type="checkbox" name="tempoJogo" id="1hora">
+            <label for="gameTime">1 hora</label>
+            <input type="checkbox" name="tempoJogo" id="2horas">
+            <label for="gameTime">2 horas</label>
+            <input type="checkbox" name="tempoJogo" id="3horas">
+            <label for="gameTime">3 horas</label>
+            <input type="checkbox" name="tempoJogo" id="4horas">
+            <label for="gameTime">4 horas</label>
+           </form>
+        </div>
+        <div class="imagemContainer">
+            <a href="index.html">
+                <img src="https://i.ibb.co/c2w26FJ/Screenshot-2024-08-20-T105852-003-transformed-1.png" alt="Tela inicial">
+            </a>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
