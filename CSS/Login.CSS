@@ -51,3 +51,62 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilo geral do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilo para as checkboxes alinhadas horizontalmente */
+p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.formLogin {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a imagem */
+.imagemContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imagemContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#enviaCadastro {
+    display: block; 
+    background-color: #022e03;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
